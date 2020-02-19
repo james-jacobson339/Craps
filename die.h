@@ -17,19 +17,17 @@ private:
     std::string material;
     int startingValue;
 public:
-    Die (int startingNumberOfSides, int startingIncrement, int startingStartingValue, std::string color, bool isSymbols = false, std::string material = "Bone");
+    Die (int startingNumberOfSides, int startingIncrement, int startingStartingValue);
     int roll();
     void setNumberOfSides(int newNumberOfSides);
     int getNumberOfSides();
     void setIncrement(int newIncrement);
     int getIncrement();
+    void setStartingValue(int newStartingValue);
+    void getStartingValue();
     void setValue(int newValue);
     int getValue();
-    void setColor(std::string newColor);
-    std::string getColor();
-    bool isSymbol();
-    void setMaterial(std::string newMaterial);
-    std::string getMaterial();
+
 };
 
 #endif //CRAPS_DIE_H

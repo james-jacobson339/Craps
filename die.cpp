@@ -3,45 +3,36 @@
 //
 
 #include "die.h"
-#include <random>
+#include <cstdlib>
 
-Die (int startingNumberOfSides, int startingIncrement, int startingStartingValue, std::string color, bool isSymbols = false, std::string material = "Bone") {
+Die (int startingNumberOfSides, int startingIncrement, int startingStartingValue) {
 
 }
     int Die :: roll() {
-
+        value = random() % numberOfSides;
     }
     void Die :: setNumberOfSides(int newNumberOfSides) {
-
+        numberOfSides = newNumberOfSides;
     }
     int Die :: getNumberOfSides() {
-
+        return numberOfSides;
     }
     void Die :: setIncrement(int newIncrement) {
-
+        increment = newIncrement;
     }
     int Die :: getIncrement() {
-
+        return increment;
+    }
+    void Die :: setStartingValue(int newStartingValue) {
+        startingValue = newStartingValue;
+    }
+    void Die :: getStartingValue(){
+        return startingValue;
     }
     void Die :: setValue(int newValue) {
-
+        value = newValue;
     }
     int Die :: getValue() {
-
+        return value;
     }
-    void Die :: setColor(std::string newColor) {
 
-    }
-    std::string Die :: getColor() {
-
-    }
-    bool Die :: isSymbol();
-    {
-
-    }
-    void Die :: setMaterial(std::string newMaterial) {
-
-    }
-    std::string Die :: getMaterial() {
-
-    }
