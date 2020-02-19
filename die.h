@@ -12,9 +12,6 @@ private:
     int numberOfSides;
     int increment;
     int value;
-    std::string color;
-    bool isSymbols;
-    std::string material;
     int startingValue;
 public:
     Die (int startingNumberOfSides, int startingIncrement, int startingStartingValue);
@@ -24,7 +21,7 @@ public:
     void setIncrement(int newIncrement);
     int getIncrement();
     void setStartingValue(int newStartingValue);
-    void getStartingValue();
+    int getStartingValue();
     void setValue(int newValue);
     int getValue();
 
